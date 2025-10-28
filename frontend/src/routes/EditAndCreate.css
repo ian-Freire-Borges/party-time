@@ -1,0 +1,15 @@
+#btn {
+   margin-bottom: 6px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #9b59b6, #8e44ad); 
+  border: 2px solid #8e44ad; 
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#btn:hover {
+    border: 2px solid #8e44ad; 
+  filter: brightness(1.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
