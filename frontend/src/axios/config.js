@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const partyFecth = axios.create({
-    baseURL: "http://localhost:3000/api/",
+    baseURL: "https://party-time-r5i2.onrender.com/api/", 
     headers:{
         "Content-Type": "application/json",
     },
