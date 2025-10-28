@@ -5,10 +5,24 @@ import Particle from './components/particle';
 import {ToastContainer} from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css"
 import Footer from './components/Footer';
-import { useState} from "react";
+import { useState,useEffect} from "react";
 
 function App() {
   const [searchParty, setSearchParty] = useState("");
+  
+    useEffect(() => {
+    const handleTouchMove = (e) => {
+      if (document.body.scrollHeight <= window.innerHeight) {
+        e.preventDefault(); // bloqueia bounce
+      }
+    };
+
+    document.addEventListener("touchmove", handleTouchMove, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
   
   return (
     <div>
