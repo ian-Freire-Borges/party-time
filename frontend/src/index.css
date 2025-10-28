@@ -6,9 +6,12 @@
 
    
 }
-html, body {
-  overscroll-behavior: contain; 
-  touch-action: pan-y;           
+html, body, #root {
+  overscroll-behavior: none;           /* bloqueia o bounce */
+overflow-x: hidden;                  /* evita scroll horizontal inesperado */
+-webkit-overflow-scrolling: touch;   /* mantém momentum no iOS */
+touch-action: manipulation;          /* previne scroll/zoom elástico */
+-ms-touch-action: manipulation; 
 }
 
 ul{
