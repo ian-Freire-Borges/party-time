@@ -11,7 +11,7 @@ function App() {
   const [searchParty, setSearchParty] = useState("");
   
   return (
-    <div id="App">
+    <div>
       <Particle style={{ zIndex: -1, position: "fixed", top: 0, left: 0 }} />
       <div id="MainContent">
         <ToastContainer/>

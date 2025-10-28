@@ -1,8 +1,6 @@
-import "./Footer.css"
-
 function Footer() {
   return (
-    <footer className="bg-dark text-light py-0 ">
+        <footer className="bg-dark text-light py-1 mt-5">
       <div className="container">
         <div className="row align-items-center">
           
