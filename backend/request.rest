@@ -1,0 +1,105 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+ "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/68efdd13f521a2d8e62c2239
+
+###
+DELETE http://localhost:3000/api/services/68eaae724eda574ffc942afa
+
+###
+PUT http://localhost:3000/api/services/68eaae724eda574ffc942afa
+Content-Type: application/json
+
+{
+    "name":"Festona",
+    "description":"dsjaja ajkjsjcij fkdaijha akfkjafjcj fjakdj fjj kdofj mkj kfdoj dfjjd mlsdf ioilafaj ko ij kojjoa ko kaodaojao kao aojo aj okoja kajdijam akoajn amoajamk koajdamd oajdajdm kok ajoa kak afao",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1618371731836-2b9bff9ac72a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+    
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Festona segura",
+    "author": "Ias o freire",
+    "description": "dsjaja ajkjsjcij fkdaijha akfkjafjcj fjakdj fjj kdofj mkj kfdoj dfjjd mlsdf ioilafaj ko ",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1618371731836-2b9bff9ac72a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    "services":[
+        {
+            "name":"o1",
+            "description":"alguma descriçao",
+            "price": 40,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUp2fP3Pbs_rkyrD9epRLQSCp9K04FspOrtQ&s"
+        },
+        {
+             "name":"o2",
+            "description":"alguma descriçao",
+            "price": 40,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUp2fP3Pbs_rkyrD9epRLQSCp9K04FspOrtQ&s"
+        },
+        {
+            "name":"o3",
+            "description":"alguma descriçao",
+            "price": 140,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUp2fP3Pbs_rkyrD9epRLQSCp9K04FspOrtQ&s"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+
+###
+GET http://localhost:3000/api/parties/68f29acc9462e1a904d27f9c
+
+###
+DELETE http://localhost:3000/api/parties/68f298f89462e1a904d27f9a
+
+###
+PUT http://localhost:3000/api/parties/68f29acc9462e1a904d27f9c
+Content-Type: application/json
+
+{
+    "title": "meuevento2",
+    "author": "Iassn",
+    "description": "festa aniversario",
+    "budget": 9000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUp2fP3Pbs_rkyrD9epRLQSCp9K04FspOrtQ&s",
+    "services":[
+        {
+            "name":"o12",
+            "description":"alguma descriçao",
+            "price": 40,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUp2fP3Pbs_rkyrD9epRLQSCp9K04FspOrtQ&s"
+        },
+        {
+             "name":"o2",
+            "description":"alguma descriçao",
+            "price": 40,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUp2fP3Pbs_rkyrD9epRLQSCp9K04FspOrtQ&s"
+        },
+        {
+            "name":"o3",
+            "description":"alguma descriçao",
+            "price": 1440,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUp2fP3Pbs_rkyrD9epRLQSCp9K04FspOrtQ&s"
+        }
+    ]
+}
