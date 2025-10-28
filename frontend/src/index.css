@@ -6,6 +6,10 @@
 
    
 }
+html, body {
+  overscroll-behavior: contain; 
+  touch-action: pan-y;           
+}
 
 ul{
     list-style: none;
